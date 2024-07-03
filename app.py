@@ -4,9 +4,7 @@ import pandas as pd
 import numpy as np
 import xgboost
 from xgboost import XGBRegressor
-import warnings
-warnings.filterwarnings("ignore", message="numpy.dtype size changed")
-warnings.filterwarnings("ignore", message="numpy.ufunc size changed")
+
 pipe = pickle.load(open('pipe.pkl','rb'))
 
 teams = ['Australia',
